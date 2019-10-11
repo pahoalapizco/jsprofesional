@@ -1,10 +1,10 @@
 <div align="center"> 
-  <h1> JavaScript Profecional </h1>
+  <h1> JavaScript Profesional </h1>
 </div>
 
 ## Contenido
-- [Cómo llega un Script al navegador]
-- [Scope] (#Scope)
+- [Cómo llega un Script al navegador](#Como-llega-un-Script-al-navegador)
+- [Scope](#Scope)
 
 ## Cómo llega un Script al navegador
 
