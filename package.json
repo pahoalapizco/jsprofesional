@@ -1,0 +1,24 @@
+{
+  "name": "jsprofesional",
+  "version": "1.0.0",
+  "description": "Pequeño proyecto para entender en profundidad JavaScript, también se incluye el inicio del proyecto platzi-video",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=8081",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pahoalapizco/jsprofesional.git"
+  },
+  "author": "pahoalapizco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pahoalapizco/jsprofesional/issues"
+  },
+  "homepage": "https://github.com/pahoalapizco/jsprofesional#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "standard": "^14.3.1"
+  }
+}

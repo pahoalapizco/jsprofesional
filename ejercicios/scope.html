@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scope</title>
+</head>
+<body>
+  <h2> Scope de las variables </h2>
+  <a href="/ejercicios/"> Indice </a>
+  <p> <em> Abre la consola! </em> </p>
+
+  <script>
+    // Global Scope
+    var message = "Hello World XD"
+    var $ = function(message) {
+      console.log(`Say: ${message}`)
+    }
+
+    // Function Scope
+    function printNumbers () {
+      for (var i = 0; i < 10; i++) {
+        // n solo vive dentro de la función "print" por lo que su valor
+        // se respeta aunque i si cambie de valor.
+        function print (n) {
+          setTimeout(function () {
+            console.log(`Number ${n}`)
+          }, 100)
+        }
+        print (i)
+      }
+    }
+    // printNumbers()
+
+    // Block Scope
+    function printNumbersTwo () {
+      // let respeta el valor de i por que cada iteración es un bloque nuevo.
+      for (let i = 0; i < 10; i++) {
+        setTimeout(function () {
+          console.log(`Number ${i}`)
+        }, 100);
+      }
+    }
+    // printNumbersTwo()
+    
+  </script>
+</body>
+</html>
