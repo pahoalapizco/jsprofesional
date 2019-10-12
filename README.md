@@ -5,6 +5,8 @@
 ## Contenido
 - [Cómo llega un Script al navegador](#Como-llega-un-Script-al-navegador)
 - [Scope](#Scope)
+- [Closures](#Closures)
+
 
 ## Cómo llega un Script al navegador
 
@@ -41,3 +43,21 @@ Variables definidas dentro de un bloque, se utilizan las palabras recervadas `le
 
 **Module Scope**
 Las variables son limitadas al archivo en el que están declaradas, esto se especifica en el script al indicarle que es un modulo `type="module"`
+
+
+## Closures
+
+Son funciones que regresan una función o un objeto con funciones que mantienen las variables que fueron declaradas fuera de su scope.
+
+Los closures sirven para tener algo parecido a las variables privadas. Es decir encapsula variables que no pueden ser modificadas directamente por otros objetos, sólo por funciones.
+
+#### `Ejemplo Scope Global`
+
+```javascript
+let color = 'red'
+
+function printColor () {
+  console.log(color)
+}
+
+```
